@@ -4,22 +4,26 @@
 #
 Name     : boto3
 Version  : 1.4.4
-Release  : 1
+Release  : 2
 URL      : https://pypi.python.org/packages/58/61/50d2e459049c5dbc963473a71fae928ac0e58ffe3fe7afd24c817ee210b9/boto3-1.4.4.tar.gz
 Source0  : https://pypi.python.org/packages/58/61/50d2e459049c5dbc963473a71fae928ac0e58ffe3fe7afd24c817ee210b9/boto3-1.4.4.tar.gz
 Summary  : The AWS SDK for Python
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: boto3-python
+Requires: botocore
 Requires: jmespath
 Requires: nose
 Requires: python-mock
+Requires: s3transfer
 Requires: unittest2
 Requires: wheel
+BuildRequires : botocore
 BuildRequires : pbr
 BuildRequires : pip
 BuildRequires : python-dev
 BuildRequires : python3-dev
+BuildRequires : s3transfer
 BuildRequires : setuptools
 
 %description
@@ -40,12 +44,12 @@ python components for the boto3 package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1492367291
+export SOURCE_DATE_EPOCH=1492367866
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1492367291
+export SOURCE_DATE_EPOCH=1492367866
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
