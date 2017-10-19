@@ -4,7 +4,7 @@
 #
 Name     : boto3
 Version  : 1.4.7
-Release  : 9
+Release  : 10
 URL      : https://pypi.debian.net/boto3/boto3-1.4.7.tar.gz
 Source0  : https://pypi.debian.net/boto3/boto3-1.4.7.tar.gz
 Summary  : The AWS SDK for Python
