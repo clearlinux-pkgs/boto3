@@ -4,7 +4,7 @@
 #
 Name     : boto3
 Version  : 1.5.0
-Release  : 13
+Release  : 14
 URL      : https://pypi.debian.net/boto3/boto3-1.5.0.tar.gz
 Source0  : https://pypi.debian.net/boto3/boto3-1.5.0.tar.gz
 Summary  : The AWS SDK for Python
@@ -14,6 +14,7 @@ Requires: boto3-legacypython
 Requires: boto3-python3
 Requires: boto3-python
 Requires: botocore
+Requires: jmsepath
 Requires: s3transfer
 BuildRequires : botocore
 BuildRequires : pbr
@@ -72,12 +73,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1513356506
+export SOURCE_DATE_EPOCH=1513702609
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1513356506
+export SOURCE_DATE_EPOCH=1513702609
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
