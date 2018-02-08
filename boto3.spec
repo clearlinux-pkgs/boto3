@@ -4,13 +4,12 @@
 #
 Name     : boto3
 Version  : 1.5.23
-Release  : 19
+Release  : 20
 URL      : https://pypi.python.org/packages/b2/ae/67a192faf4a74bcbb52c4592dbd885216bf013564241ac2c0373ec0e8adb/boto3-1.5.23.tar.gz
 Source0  : https://pypi.python.org/packages/b2/ae/67a192faf4a74bcbb52c4592dbd885216bf013564241ac2c0373ec0e8adb/boto3-1.5.23.tar.gz
 Summary  : The AWS SDK for Python
 Group    : Development/Tools
 License  : Apache-2.0
-Requires: boto3-legacypython
 Requires: boto3-python3
 Requires: boto3-python
 Requires: botocore
@@ -41,15 +40,6 @@ Boto 3 - The AWS SDK for Python
         services that are supported. To see only those features which have been
         released, check out the `stable docs`_.
 
-%package legacypython
-Summary: legacypython components for the boto3 package.
-Group: Default
-Requires: python-core
-
-%description legacypython
-legacypython components for the boto3 package.
-
-
 %package python
 Summary: python components for the boto3 package.
 Group: Default
@@ -76,25 +66,18 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1517929920
-python2 setup.py build -b py2
+export SOURCE_DATE_EPOCH=1518113496
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1517929920
 rm -rf %{buildroot}
-python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
-python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
+python3 -tt setup.py build -b py3 install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
 
 %files
 %defattr(-,root,root,-)
-
-%files legacypython
-%defattr(-,root,root,-)
-/usr/lib/python2*/*
 
 %files python
 %defattr(-,root,root,-)
