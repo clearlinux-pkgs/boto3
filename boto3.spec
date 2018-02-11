@@ -4,7 +4,7 @@
 #
 Name     : boto3
 Version  : 1.5.26
-Release  : 21
+Release  : 22
 URL      : https://pypi.python.org/packages/3c/7f/50ea55f990022f1a0c34c7535d8f8e70041df33946a4fb881088b2a32a44/boto3-1.5.26.tar.gz
 Source0  : https://pypi.python.org/packages/3c/7f/50ea55f990022f1a0c34c7535d8f8e70041df33946a4fb881088b2a32a44/boto3-1.5.26.tar.gz
 Summary  : The AWS SDK for Python
@@ -66,7 +66,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1518272038
+export SOURCE_DATE_EPOCH=1518314089
 python3 setup.py build -b py3
 
 %install
