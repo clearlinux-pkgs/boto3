@@ -1,5 +1,5 @@
 PKG_NAME := boto3
-URL = https://pypi.python.org/packages/76/a5/9802c9364c664eb5cdeb6a0a84b478d565f9d86f05f76d6e9107f54483ec/boto3-1.6.21.tar.gz
+URL = https://pypi.python.org/packages/9f/d9/ba31201ec1f135fe33cab25a4c1ba459f962e7372a3c409f67d7d2a5c074/boto3-1.6.22.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
