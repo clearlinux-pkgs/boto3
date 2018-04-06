@@ -4,7 +4,7 @@
 #
 Name     : boto3
 Version  : 1.7.2
-Release  : 37
+Release  : 38
 URL      : https://pypi.python.org/packages/62/cd/64b95009265084ccaefe22e82368de63667dcb7b0f0760e1cd16f477a0a7/boto3-1.7.2.tar.gz
 Source0  : https://pypi.python.org/packages/62/cd/64b95009265084ccaefe22e82368de63667dcb7b0f0760e1cd16f477a0a7/boto3-1.7.2.tar.gz
 Summary  : The AWS SDK for Python
@@ -66,7 +66,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1523046921
+export SOURCE_DATE_EPOCH=1523048447
 python3 setup.py build -b py3
 
 %install
