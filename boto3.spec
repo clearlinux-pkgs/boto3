@@ -4,7 +4,7 @@
 #
 Name     : boto3
 Version  : 1.7.21
-Release  : 43
+Release  : 45
 URL      : https://github.com/boto/boto3/archive/1.7.21.tar.gz
 Source0  : https://github.com/boto/boto3/archive/1.7.21.tar.gz
 Summary  : No detailed summary available
@@ -12,12 +12,13 @@ Group    : Development/Tools
 License  : Apache-2.0
 Requires: boto3-python3
 Requires: boto3-python
+Requires: botocore
 Requires: jmespath
 Requires: nose
 Requires: python-mock
+Requires: s3transfer
 Requires: unittest2
 Requires: wheel
-BuildRequires : botocore
 BuildRequires : pbr
 BuildRequires : pip
 BuildRequires : pluggy
@@ -25,7 +26,6 @@ BuildRequires : py-python
 BuildRequires : pytest
 BuildRequires : python-dev
 BuildRequires : python3-dev
-BuildRequires : s3transfer
 BuildRequires : setuptools
 BuildRequires : tox
 BuildRequires : virtualenv
@@ -61,7 +61,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1526429142
+export SOURCE_DATE_EPOCH=1526446022
 python3 setup.py build -b py3
 
 %install
