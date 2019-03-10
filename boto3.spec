@@ -4,7 +4,7 @@
 #
 Name     : boto3
 Version  : 1.9.111
-Release  : 145
+Release  : 146
 URL      : https://github.com/boto/boto3/archive/1.9.111.tar.gz
 Source0  : https://github.com/boto/boto3/archive/1.9.111.tar.gz
 Summary  : No detailed summary available
