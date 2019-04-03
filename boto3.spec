@@ -4,7 +4,7 @@
 #
 Name     : boto3
 Version  : 1.9.127
-Release  : 163
+Release  : 164
 URL      : https://github.com/boto/boto3/archive/1.9.127/boto3-1.9.127.tar.gz
 Source0  : https://github.com/boto/boto3/archive/1.9.127/boto3-1.9.127.tar.gz
 Summary  : No detailed summary available
@@ -62,7 +62,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1554305889
+export SOURCE_DATE_EPOCH=1554308122
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
