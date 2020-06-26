@@ -52,6 +52,11 @@ python components for the boto3 package.
 Summary: python3 components for the boto3 package.
 Group: Default
 Requires: python3-core
+Provides: pypi(boto3)
+Requires: pypi(botocore)
+Requires: pypi(jmespath)
+Requires: pypi(s3transfer)
+
 
 %description python3
 python3 components for the boto3 package.
