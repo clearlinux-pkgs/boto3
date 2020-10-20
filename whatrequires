@@ -2,4 +2,5 @@
 certbot
 librdkafka
 mercurial
+pytorch
 smart_open
