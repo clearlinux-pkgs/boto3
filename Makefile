@@ -1,5 +1,5 @@
 PKG_NAME := boto3
-URL = https://github.com/boto/boto3/archive/1.17.88/boto3-1.17.88.tar.gz
+URL = https://github.com/boto/boto3/archive/1.17.89/boto3-1.17.89.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
