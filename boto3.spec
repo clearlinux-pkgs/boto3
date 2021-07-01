@@ -4,7 +4,7 @@
 #
 Name     : boto3
 Version  : 1.17.102
-Release  : 642
+Release  : 643
 URL      : https://github.com/boto/boto3/archive/1.17.102/boto3-1.17.102.tar.gz
 Source0  : https://github.com/boto/boto3/archive/1.17.102/boto3-1.17.102.tar.gz
 Summary  : AWS SDK for Python
