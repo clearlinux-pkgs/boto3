@@ -4,7 +4,7 @@
 #
 Name     : boto3
 Version  : 1.18.4
-Release  : 657
+Release  : 658
 URL      : https://github.com/boto/boto3/archive/1.18.4/boto3-1.18.4.tar.gz
 Source0  : https://github.com/boto/boto3/archive/1.18.4/boto3-1.18.4.tar.gz
 Summary  : AWS SDK for Python
