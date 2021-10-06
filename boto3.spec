@@ -52,10 +52,6 @@ python components for the boto3 package.
 Summary: python3 components for the boto3 package.
 Group: Default
 Requires: python3-core
-Provides: pypi(boto3)
-Requires: pypi(botocore)
-Requires: pypi(jmespath)
-Requires: pypi(s3transfer)
 
 %description python3
 python3 components for the boto3 package.
@@ -70,7 +66,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1633559958
+export SOURCE_DATE_EPOCH=1633560104
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
