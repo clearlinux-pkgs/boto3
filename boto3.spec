@@ -4,7 +4,7 @@
 #
 Name     : boto3
 Version  : 1.20.31
-Release  : 764
+Release  : 765
 URL      : https://github.com/boto/boto3/archive/1.20.31/boto3-1.20.31.tar.gz
 Source0  : https://github.com/boto/boto3/archive/1.20.31/boto3-1.20.31.tar.gz
 Summary  : AWS SDK for Python
@@ -14,14 +14,14 @@ Requires: boto3-license = %{version}-%{release}
 Requires: boto3-python = %{version}-%{release}
 Requires: boto3-python3 = %{version}-%{release}
 Requires: botocore
-Requires: jmespath
-Requires: s3transfer
+Requires: pypi(jmespath)
+Requires: pypi(s3transfer)
 BuildRequires : buildreq-distutils3
-BuildRequires : pypi(pluggy)
 BuildRequires : pypi(py)
-BuildRequires : pypi(pytest)
-BuildRequires : pypi(tox)
-BuildRequires : pypi(virtualenv)
+BuildRequires : pypi-pluggy
+BuildRequires : pypi-pytest
+BuildRequires : pypi-tox
+BuildRequires : pypi-virtualenv
 
 %description
 Boto3 is the Amazon Web Services (AWS) Software Development Kit (SDK) for
@@ -67,7 +67,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641589128
+export SOURCE_DATE_EPOCH=1641844546
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
