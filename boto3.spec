@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : boto3
-Version  : 1.26.123
-Release  : 1091
-URL      : https://github.com/boto/boto3/archive/1.26.123/boto3-1.26.123.tar.gz
-Source0  : https://github.com/boto/boto3/archive/1.26.123/boto3-1.26.123.tar.gz
+Version  : 1.26.124
+Release  : 1092
+URL      : https://github.com/boto/boto3/archive/1.26.124/boto3-1.26.124.tar.gz
+Source0  : https://github.com/boto/boto3/archive/1.26.124/boto3-1.26.124.tar.gz
 Summary  : AWS SDK for Python
 Group    : Development/Tools
 License  : Apache-2.0
@@ -63,10 +63,10 @@ python3 components for the boto3 package.
 
 
 %prep
-%setup -q -n boto3-1.26.123
-cd %{_builddir}/boto3-1.26.123
+%setup -q -n boto3-1.26.124
+cd %{_builddir}/boto3-1.26.124
 pushd ..
-cp -a boto3-1.26.123 buildavx2
+cp -a boto3-1.26.124 buildavx2
 popd
 
 %build
@@ -74,15 +74,15 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1682957870
+export SOURCE_DATE_EPOCH=1682981297
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
+export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
