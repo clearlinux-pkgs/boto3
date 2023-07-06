@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : boto3
-Version  : 1.27.1
-Release  : 1135
-URL      : https://github.com/boto/boto3/archive/1.27.1/boto3-1.27.1.tar.gz
-Source0  : https://github.com/boto/boto3/archive/1.27.1/boto3-1.27.1.tar.gz
+Version  : 1.28.0
+Release  : 1136
+URL      : https://github.com/boto/boto3/archive/1.28.0/boto3-1.28.0.tar.gz
+Source0  : https://github.com/boto/boto3/archive/1.28.0/boto3-1.28.0.tar.gz
 Summary  : AWS SDK for Python
 Group    : Development/Tools
 License  : Apache-2.0
@@ -63,10 +63,10 @@ python3 components for the boto3 package.
 
 
 %prep
-%setup -q -n boto3-1.27.1
-cd %{_builddir}/boto3-1.27.1
+%setup -q -n boto3-1.28.0
+cd %{_builddir}/boto3-1.28.0
 pushd ..
-cp -a boto3-1.27.1 buildavx2
+cp -a boto3-1.28.0 buildavx2
 popd
 
 %build
@@ -74,7 +74,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1688598069
+export SOURCE_DATE_EPOCH=1688683633
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
