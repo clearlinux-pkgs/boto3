@@ -6,10 +6,10 @@
 # autospec commit: da8b975
 #
 Name     : boto3
-Version  : 1.34.45
-Release  : 1292
-URL      : https://github.com/boto/boto3/archive/1.34.45/boto3-1.34.45.tar.gz
-Source0  : https://github.com/boto/boto3/archive/1.34.45/boto3-1.34.45.tar.gz
+Version  : 1.34.46
+Release  : 1293
+URL      : https://github.com/boto/boto3/archive/1.34.46/boto3-1.34.46.tar.gz
+Source0  : https://github.com/boto/boto3/archive/1.34.46/boto3-1.34.46.tar.gz
 Summary  : AWS SDK for Python
 Group    : Development/Tools
 License  : Apache-2.0
@@ -65,10 +65,10 @@ python3 components for the boto3 package.
 
 
 %prep
-%setup -q -n boto3-1.34.45
-cd %{_builddir}/boto3-1.34.45
+%setup -q -n boto3-1.34.46
+cd %{_builddir}/boto3-1.34.46
 pushd ..
-cp -a boto3-1.34.45 buildavx2
+cp -a boto3-1.34.46 buildavx2
 popd
 
 %build
@@ -76,7 +76,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1708375457
+export SOURCE_DATE_EPOCH=1708461871
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
